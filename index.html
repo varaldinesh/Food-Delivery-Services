@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order food online from India's best food delivery service. Order from restaurants near you</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/hamburger.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="d-flex p-2 align-items-center justify-content-between shadow-sm fixed-top bg-white">
+        <div class="d-flex gap-3">
+            <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/hamburger.png" alt="" width="50px"></a>
+            <select class="form-select form-select-sm bg-transparent" style="border: none;"
+                aria-label=".form-select-sm example">
+                <option selected>Select City, Street Address</option>
+                <option value="1">Pune</option>
+                <option value="2">Mumbai</option>
+                <option value="3">Nagpur</option>
+            </select>
+        </div>
+        <div class="d-flex" style="gap: 70px;">
+            <span class="d-none d-lg-block"><i class="fa-solid fa-magnifying-glass" style="color: #fc8019;"></i> <span
+                    class="ml-5" style="color: #fc8019; font-weight:700;">Search</span></span>
+            <span class="" style="font-weight:500;"><img src="images/discount.png" alt="" width="20px">
+                offers</span>
+            <span class="d-none d-lg-block" style="font-weight:500;"><img src="images/help.png" alt="" width="20px">
+                Help</span>
+            <span class="d-none d-lg-block" style="font-weight:500;"><img src="images/user.png" alt="" width="20px">
+                Sign
+                In</span>
+            <span class="d-none d-lg-block" style="font-weight:500;"><img src="images/cart.png" alt="" width="20px">
+                Cart</span>
+        </div>
+    </div>
+
+    <div class="fixed-bottom bg-white d-flex d-lg-none">
+        <div class="container-fluid p-2 d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column align-items-center">
+                <a class="navbar-brand" href="#"><img src="images/hamburger.png" alt="" width="30px"></a>
+                <span class="fw-bold">Foody</span>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                <span class="fw-bold">Search</span>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="images/cart.png" alt="" width="30px">
+                <span class="fw-bold">Cart</span>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="images/user.png" alt="" width="30px">
+                <span class="fw-bold">Account</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-5 p-4" style="background-color:#171A29;" id="car">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <img src="images/banner-1.webp" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-2.jpeg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-3.webp" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-4.webp" class="d-block w-100" alt="Slide 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-4.webp" class="d-block w-100" alt="Slide 5">
+                        </div>
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-3.webp" class="d-block w-100" alt="Slide 6">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <img src="images/banner-2.jpeg" class="d-block w-100" alt="Slide 7">
+                        </div>
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-1.webp" class="d-block w-100" alt="Slide 8">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-4.webp" class="d-block w-100" alt="Slide 5">
+                        </div>
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-3.webp" class="d-block w-100" alt="Slide 6">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <img src="images/banner-2.jpeg" class="d-block w-100" alt="Slide 7">
+                        </div>
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-1.webp" class="d-block w-100" alt="Slide 8">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-4.webp" class="d-block w-100" alt="Slide 5">
+                        </div>
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-3.webp" class="d-block w-100" alt="Slide 6">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <img src="images/banner-2.jpeg" class="d-block w-100" alt="Slide 7">
+                        </div>
+                        <div class="col-12 col-md-3 d-none d-md-block">
+                            <img src="images/banner-1.webp" class="d-block w-100" alt="Slide 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h3>955 restaurants</h3>
+            </div>
+            <div class="d-flex gap-5">
+                <span class="active d-none d-lg-block">Relevance</span>
+                <span class="active d-none d-lg-block">Delivery Time</span>
+                <span class="active d-none d-lg-block">Rating</span>
+                <span class="active d-none d-lg-block">Cost: Low To High</span>
+                <span class="active d-none d-lg-block">Cost: High To Low</span>
+                <span class="fw-bold">Filter <img src="images/filter.png" alt="" width="15px"></span>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0">
+                        <img src="images/kalyan_bhel.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kalyan Bhel</h5>
+                            <p class="card-text">Street Food, Chaat, Snacks, South Indian</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-2">4.1</span>
+                                </div>
+                                <div class="delivery-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="ml-2">30 min</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>₹ 200 for two</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat this code block for each card in the row -->
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0">
+                        <img src="images/mcd.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">McDonald's</h5>
+                            <p class="card-text">Burgers, Beverages, Cafe, Desserts</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-2">4.2</span>
+                                </div>
+                                <div class="delivery-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="ml-2">26 min</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>₹ 400 for two</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0">
+                        <img src="images/1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lake Wood Family Restaurant</h5>
+                            <p class="card-text">North Indian, Chinese</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-2">4.5</span>
+                                </div>
+                                <div class="delivery-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="ml-2">21 min</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>₹ 900 for two</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0">
+                        <img src="images/2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fried Chicken Destination</h5>
+                            <p class="card-text">North Indian</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-2">3.9</span>
+                                </div>
+                                <div class="delivery-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="ml-2">34 min</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>₹ 3200 for two</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0">
+                        <img src="images/3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Castles</h5>
+                            <p class="card-text">Pizzas, Fast Food, Italian, American, Burgers</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-2">3.3</span>
+                                </div>
+                                <div class="delivery-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="ml-2">32 min</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>₹ 3200 for two</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0">
+                        <img src="images/4.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Shri Gajanan Shegaon
+                                Kachori</h5>
+                            <p class="card-text">Snacks</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-2">4.0</span>
+                                </div>
+                                <div class="delivery-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="ml-2">24 min</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>₹ 50 for two</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0">
+                        <img src="images/5.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Zomoz - The Momo Company</h5>
+                            <p class="card-text">Chinese, Fast Food, Tibetan</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-2">4.2</span>
+                                </div>
+                                <div class="delivery-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="ml-2">29 min</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>₹ 250 for two</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0">
+                        <img src="images/3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Booklate</h5>
+                            <p class="card-text">Pizzas, Italian, Fast Food, Burgers</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-2">3.5</span>
+                                </div>
+                                <div class="delivery-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="ml-2">33 min</span>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>₹ 300 for two</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="mb-3">About Us</h5>
+                    <p>Foody is the food delivery app for you.</p>
+                    <p>Our platform brings together your favorite food joints and allows you to order food from them.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p>Phone: +91 1234567890</p>
+                    <p>Email: support@foody.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2023 Foody.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline float-md-right mb-0">
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
