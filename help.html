@@ -13,6 +13,10 @@
 </head>
 
 <body>
+    <div class="container">
+        <button class="btn btn-block sharp-btn text-white fw-bold text-decoration-none"
+            style="background-color: #fc8019;  border-radius: 0;" onclick="goBack()">Back</button>
+    </div>
 
     <!-- Page Content -->
     <div class="container">
@@ -56,6 +60,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

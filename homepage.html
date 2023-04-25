@@ -12,6 +12,50 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/hamburger.png" type="image/x-icon">
+
+    <style>
+        h1 {
+            font-size: 36px;
+            background: linear-gradient(to right, #FF7F50, #FFA07A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            background: linear-gradient(to right, #FF7F50, #FFA07A);
+            color: #fff;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .card-title {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            border-color: #ccc;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #FF7F50, #FFA07A);
+            border-radius: 20px;
+            border: none;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, #FFA07A, #FF7F50);
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +79,8 @@
             <span class="d-none d-lg-block" style="font-weight:500;"><img src="images/help.png" alt="" width="20px">
                 <a class="text-decoration-none text-dark" href="help.html">Help</a></span>
             <span class="d-none d-lg-block" style="font-weight:500;"><img src="images/user.png" alt="" width="20px">
-                <a class="text-decoration-none text-dark" href="./login-form.html">Sign
+                <a class="text-decoration-none text-dark" href="./login-form.html" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Sign
                     In</a></span>
             <span class="d-none d-lg-block" style="font-weight:500;"><img src="images/cart.png" alt="" width="20px">
                 Cart</span>
@@ -45,7 +90,7 @@
     <div class="fixed-bottom bg-white d-flex d-lg-none">
         <div class="container-fluid p-2 d-flex justify-content-between align-items-center">
             <div class="d-flex flex-column align-items-center">
-                <a class="navbar-brand" href="#"><img src="images/hamburger.png" alt="" width="30px"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/hamburger.png" alt="" width="30px"></a>
                 <span class="fw-bold">Foody</span>
             </div>
             <div class="d-flex flex-column align-items-center">
@@ -58,8 +103,38 @@
             </div>
             <div class="d-flex flex-column align-items-center">
                 <img src="images/user.png" alt="" width="30px">
-                <span class="fw-bold">Account</span>
+                <span class="fw-bold" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">Account</span>
             </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">LOGIN</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-center" style="padding-top: 100px;">
+            <form>
+                <div class="form-group">
+                    <label for="mobileNumber"><i class="fas fa-phone"></i> Mobile Number</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text fs-2"><i class="fas fa-globe"></i></span>
+                        </div>
+                        <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter mobile number"
+                            required>
+                    </div>
+                </div>
+                <a href="homepage.html" class="btn btn-primary mt-3 text-decoration-none"
+                    style="border-radius: 0;">Login</a>
+
+                <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="acceptTerms">
+                    <label class="form-check-label" for="acceptTerms">By clicking on Login, I accept the
+                        <a href="terms.html">Terms & Conditions</a> & <a href="privacy.html">Privacy
+                            Policy</a></label>
+                </div>
         </div>
     </div>
 
@@ -379,9 +454,11 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="list-inline float-md-right mb-0">
-                        <li class="list-inline-item"><a href="terms.html">Terms of Use</a></li>
+                        <li class="list-inline-item"><a class="text-decoration-none text-white" href="terms.html">Terms
+                                of Use</a></li>
                         <li class="list-inline-item">|</li>
-                        <li class="list-inline-item"><a href="privacy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a class="text-decoration-none text-white"
+                                href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
