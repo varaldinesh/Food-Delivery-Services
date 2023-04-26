@@ -1,77 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Food Delivery Service - Help</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+JQLhGg6fwMxaNQ9WOgMuto593fC5Gm" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
-        <button class="btn btn-block sharp-btn text-white fw-bold text-decoration-none"
-            style="background-color: #fc8019;  border-radius: 0;" onclick="goBack()">Back</button>
-    </div>
-
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h1 class="text-center mb-5">Help &amp; Support</h1>
-                <p>Here at Food Delivery Service, we strive to provide the best possible service to our customers. If
-                    you have any questions or concerns, please don't hesitate to reach out to us.</p>
-                <h2>FAQ</h2>
-                <ul>
-                    <li>
-                        <h4>What are your business hours?</h4>
-                        <p>Our business hours are from 9am to 9pm, seven days a week.</p>
-                    </li>
-                    <li>
-                        <h4>How can I place an order?</h4>
-                        <p>You can place an order through our website or mobile app. Simply select the items you want
-                            and proceed to checkout.</p>
-                    </li>
-                    <li>
-                        <h4>What payment methods do you accept?</h4>
-                        <p>We accept all major credit cards, as well as PayPal and Apple Pay.</p>
-                    </li>
-                    <li>
-                        <h4>How long does delivery take?</h4>
-                        <p>Delivery times vary depending on your location and the time of day. You can check the
-                            estimated delivery time at checkout.</p>
-                    </li>
-                    <li>
-                        <h4>What is your return policy?</h4>
-                        <p>We do not accept returns, but if you are not satisfied with your order, please contact us and
-                            we will do our best to make it right.</p>
-                    </li>
-                </ul>
-                <h2>Contact Us</h2>
-                <p>If you need further assistance, please contact our customer support team at:</p>
-                <ul>
-                    <li>Email: support@fooddeliveryservice.com</li>
-                    <li>Phone: 1-800-555-5555</li>
-                </ul>
-            </div>
+        <div class="d-flex justify-content-between m-5">
+            <h2>FAQ</h2>
+            <button class="btn btn-primary" onclick="goBack()" style="border-radius: 0;">Back</button>
         </div>
-    </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is FOODY Customer Care Number?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We value our customer’s time and hence moved away from a single customer care number to a
+                        comprehensive chat-based support system for quick and easy resolution. You no longer have to go
+                        through the maze of an IVRS call support. Just search for your issue in the help section on this
+                        page and initiate a chat with us. A customer care executive will be assigned to you shortly. You
+                        can
+                        also email us your issue on support@foody.com
 
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+                        Note: We value your privacy and your information is safe with us. Please do not reveal any
+                        personal
+                        information, bank account number, OTP etc. to another person. A Swiggy representative will never
+                        ask
+                        you for these details. Please do not reveal these details to fraudsters and imposters claiming
+                        to be
+                        calling on our behalf. Be vigilant and do not entertain phishing calls or emails.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        I want to explore career opportunities with Swiggy
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Send Your Resume on hr@foody.com
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        I want to provide feedback
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Send Email Us at contact@foody.com
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What payment options are available for ordering food on Foody?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Foody accepts multiple payment options including credit/debit card, net banking, e-wallets and
+                        cash
+                        on delivery.
+                    </div>
+                </div>
+            </div>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
